@@ -11,3 +11,19 @@
 .my-icon-azioni {
     min-width: 125px;
 }
+
+/* Personalizzo i colori del testo, dei bordi
+e il colore di sfondo del pulsante */
+.search-nav-color .btn, .btn:hover {
+    color: white;
+    border-color: white;
+    background-color: black;
+}
+
+/* Personalizzo il colore di sfondo dell'input del testo
+e il colore del placeholder */
+.search-nav-color .form-control {
+    background-color: white;
+    color: gray;
+}
+
