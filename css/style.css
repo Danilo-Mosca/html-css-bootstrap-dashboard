@@ -7,7 +7,12 @@
     border: 1px solid red;
 }
 
-
+/* Do una grandezza minima (sotto la quale non può scendere)
+alla colonna "Azioni" che contiene le icone 
+font awesone di "modifica" e "cestina" 
+così da visualizzare entrambe le icone affiancate quando riduco
+lo schermo in mobile invece che visualizzarle una sopra ed una sotto
+come accadrebbe normalmente  */
 .my-icon-azioni {
     min-width: 125px;
 }
