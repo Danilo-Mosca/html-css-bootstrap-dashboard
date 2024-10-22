@@ -2,3 +2,7 @@
     width: 50px;
     aspect-ratio: 1/1;
 }
+
+.debug {
+    border: 1px solid red;
+}
