@@ -18,28 +18,39 @@
 
 <body>
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body justify-content-between"
+            data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img class="img my-logo" src="img/duck.png" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Anagrafica Utenti</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#">Storico Prestiti</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" href="#">Help</a>
                         </li>
                     </ul>
+
+                    <div class="navbar bg-body-tertiary">
+                        <div class="container-fluid">
+                          <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
+                            <button class="btn btn-outline-success" type="submit">Cerca</button>
+                          </form>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </nav>
@@ -63,7 +74,7 @@
                                 <th class="w-50">Titolo</th>
                                 <th class="w-20 d-none d-sm-table-cell">Data prestito</th>
                                 <th class="w-20">Stato</th>
-                                <th class="w-10 text-center">Azioni</th>
+                                <th class="w-10 text-center my-icon-azioni">Azioni</th>
                             </tr>
                         </thead>
 
@@ -173,7 +184,7 @@
 
             <!-- Card Todo -->
             <div class="col-12 col-lg-4">
-                <div class="card mb-4">
+                <div class="card m-4">
                     <h5 class="card-header">Todo</h5>
                     <div class="card-body m-3 border rounded">
 
@@ -198,7 +209,7 @@
                     </div>
 
                 </div>
-                
+
                 <!-- Card F.A.Q. -->
                 <div class="card">
                     <h5 class="card-header">F.A.Q.</h5>
