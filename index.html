@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body justify-content-between"
             data-bs-theme="dark">
@@ -46,10 +47,10 @@
                     e il pulsante "Cerca"  -->
                     <div class="navbar search-nav-color">
                         <div class="container-fluid">
-                          <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
-                            <button class="btn btn-outline-success" type="submit">Cerca</button>
-                          </form>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
+                                <button class="btn btn-outline-success" type="submit">Cerca</button>
+                            </form>
                         </div>
                     </div>
 
@@ -74,6 +75,11 @@
                                 <!-- Assegno una dimensione alle colonne con il Sizing 
                              w-50 che sta per widht: 50%  w-20 = width: 20% e w-10 = width: 10% -->
                                 <th class="w-50">Titolo</th>
+                                <!-- Nascondo la colonna "Data prestito" per i dispositivi mobili (sm)
+                                per far questo non mi basta solo aggiungere la classe "d-none"
+                                ma devo ma devo dargli anche il valore "d-table-cell" per eliminare
+                                le celle nelle colonne. In questo esempio le nascondo solo per la
+                                visualizzazione mobile con: d-none d-sm-table-cell -->
                                 <th class="w-20 d-none d-sm-table-cell">Data prestito</th>
                                 <th class="w-20">Stato</th>
                                 <th class="w-10 text-center my-icon-azioni">Azioni</th>
@@ -83,6 +89,9 @@
                         <tbody>
                             <tr>
                                 <td class="">I pilastri della terra</td>
+                                <!-- Come la colonna "Data prestito" nell'head della tabella, solo
+                                che non mi basta assegnarlo alla sola testata della tabella
+                                ma devo assegnarlo anche alle celle che riempiono il contenuto della tabella -->
                                 <td class="d-none d-sm-table-cell">-</td>
                                 <td><span class="badge text-bg-success">Disponibile</span></td>
                                 <td class="text-center">
@@ -227,8 +236,6 @@
                         </tbody>
                     </table>
                 </div>
-
-
             </div>
 
             <!-- Card Todo -->
@@ -238,20 +245,20 @@
                     <div class="card-body m-3 border rounded">
 
                         <div class="form-check border-bottom p-2">
-                            <input class="form-check-input m-1" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label px-1" for="flexCheckDefault">
+                            <input class="form-check-input m-1" type="checkbox" value="call" id="flexCheckDefault1">
+                            <label class="form-check-label px-1" for="flexCheckDefault1">
                                 Chiamare segreteria
                             </label>
                         </div>
                         <div class="form-check border-bottom p-2">
-                            <input class="form-check-input m-1" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label px-1" for="flexCheckChecked">
+                            <input class="form-check-input m-1" type="checkbox" value="send" id="flexCheckChecked2">
+                            <label class="form-check-label px-1" for="flexCheckChecked2">
                                 Mandare avvisi prestiti scaduti
                             </label>
                         </div>
                         <div class="form-check border-bottom p-2">
-                            <input class="form-check-input m-1" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label px-1" for="flexCheckChecked">
+                            <input class="form-check-input m-1" type="checkbox" value="order" id="flexCheckChecked3">
+                            <label class="form-check-label px-1" for="flexCheckChecked3">
                                 Ordinare nuovi libri
                             </label>
                         </div>
@@ -330,7 +337,6 @@
 
                     </div>
                 </div>
-
 
             </div>
         </div>
