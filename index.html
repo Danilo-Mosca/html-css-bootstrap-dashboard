@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +16,10 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg  bg-dark border-bottom border-body" data-bs-theme="dark">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="img my-logo" src="img/duck.png"></a>
+                <a class="navbar-brand" href="#"><img class="img my-logo" src="img/duck.png" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -49,44 +51,110 @@
                 <h2>Catalogo Libri</h2>
                 <button type="button" class="btn btn-primary">Aggiungi Libro</button>
             </div>
-            
+
             <div>
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr>
                             <!-- Assegno una dimensione alle colonne con il Sizing 
                              w-50 che sta per widht: 50%  w-20 = width: 20% e w-10 = width: 10% -->
-                            <th class="w-50">Titolo</th>
-                            <th class="w-20 d-none d-md-table-cell">Data prestito</th>
+                            <th class=" w-50">Titolo</th>
+                            <th class="w-20 d-none d-sm-table-cell">Data prestito</th>
                             <th class="w-20">Stato</th>
                             <th class="w-10 text-center">Azioni</th>
                         </tr>
                     </thead>
+
                     <tbody>
                         <tr>
                             <td class="">I pilastri della terra</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="badge text-bg-success">Disponibile</span>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td><span class="badge text-bg-success">Disponibile</span></td>
                             <td class="text-center">
                                 <button type="button" class="btn btn-outline-secondary">
                                     <i class="fa-solid fa-pen"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
                             </td>
                         </tr>
-                        
+
                         <tr>
                             <td class="">I promessi sposi</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="badge text-bg-success">Disponibile</span>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td><span class="badge text-bg-success">Disponibile</span></td>
                             <td class="text-center">
                                 <button type="button" class="btn btn-outline-secondary">
                                     <i class="fa-solid fa-pen"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
                             </td>
                         </tr>
+
+                        <tr>
+                            <td class="">Il signore degli anelli</td>
+                            <td class="d-none d-sm-table-cell">18/10/2023</td>
+                            <td><span class="badge text-bg-warning text-white">In prestito</span></td>
+                            <td class="text-center">
+                                <button type="button" class="btn btn-outline-secondary">
+                                    <i class="fa-solid fa-pen"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="">Harry Potter e la pietra filosofale</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td><span class="badge text-bg-success">Disponibile</span></td>
+                            <td class="text-center">
+                                <button type="button" class="btn btn-outline-secondary">
+                                    <i class="fa-solid fa-pen"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="">Il codice Da Vinci</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                            <td class="text-center">
+                                <button type="button" class="btn btn-outline-secondary">
+                                    <i class="fa-solid fa-pen"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="">Shining</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td><span class="badge text-bg-success">Disponibile</span></td>
+                            <td class="text-center">
+                                <button type="button" class="btn btn-outline-secondary">
+                                    <i class="fa-solid fa-pen"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="">La divina commedia</td>
+                            <td class="d-none d-sm-table-cell">21/09/2023</td>
+                            <td><span class="badge text-bg-warning text-white">In prestito</span></td>
+                            <td class="text-center">
+                                <button type="button" class="btn btn-outline-secondary">
+                                    <i class="fa-solid fa-pen"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum consequuntur eum. Distinctio, voluptatem maiores obcaecati, eos rem esse maxime officiis nobis, soluta modi quae at deleniti veritatis molestiae. Nobis iure nam nisi eos velit esse, tempora consequatur, sapiente dolorum consectetur totam provident eveniet! At ipsum odit commodi consectetur quisquam alias, quas unde delectus ullam vitae ratione ipsam iste nostrum ducimus est soluta voluptas similique dolorem mollitia cumque perspiciatis odio ad laborum? Sint aperiam deleniti consequuntur architecto numquam. Commodi explicabo mollitia, voluptatem dignissimos nostrum similique eius, fugit ea vel soluta nemo debitis dicta consequuntur dolorum voluptatibus, sapiente iusto adipisci quia nobis ducimus nisi ipsa rerum rem? Placeat sequi porro quas deserunt harum quo, dolores ratione repellendus rerum facilis quis ad, sit nobis iusto necessitatibus ullam corrupti voluptatem debitis similique tempora. Exercitationem nostrum voluptatum possimus iure iusto rem, molestiae numquam maiores beatae, soluta cupiditate. Repellendus cum explicabo accusamus pariatur quo qui nulla minus ab illum reiciendis! Quis ab, veritatis laboriosam fuga asperiores culpa sit repudiandae natus eligendi quisquam sed ratione pariatur quo placeat architecto incidunt neque omnis labore unde libero eos repellendus voluptas! Perspiciatis mollitia eveniet laborum ipsum velit expedita eum atque similique, eius aperiam at, molestias officia fugiat suscipit veritatis. Necessitatibus laborum voluptatem temporibus id assumenda mollitia officiis libero ipsam, ad ipsa asperiores provident adipisci natus dolorem facere illum repudiandae possimus vel unde voluptatum aliquam magni? Molestias a quas laudantium ea commodi officiis nesciunt inventore rerum in, vel molestiae odio doloribus, expedita perferendis aut modi architecto itaque, perspiciatis explicabo distinctio quae? Praesentium, repellendus magni. Mollitia odit corporis officiis qui itaque esse quasi temporibus, quisquam blanditiis quos possimus! Suscipit, doloribus. Sint alias odit, laudantium vel quisquam cumque? Voluptate, cupiditate! Ipsam, laborum? Illo ipsum obcaecati nostrum doloribus, fugit error quae saepe. Recusandae, dolorem id quibusdam voluptas animi dolor laudantium vero aperiam earum eligendi perspiciatis provident? Quo dignissimos maxime in reiciendis, placeat voluptates hic excepturi cupiditate voluptate quasi nostrum ducimus voluptatum at eos consectetur! Nam quos placeat eaque ratione tempore nemo, facere minus iure tempora nulla nisi adipisci ipsa explicabo quia nostrum quo perferendis doloremque modi velit deserunt quisquam officia exercitationem! Qui ullam consequuntur, perferendis illo velit autem quia magnam laborum, rem doloremque reprehenderit, nihil cum nam quasi tempore! Aliquid magni quas saepe quam itaque quidem? Ea cum harum id nulla modi omnis. Nihil iusto ea molestias, optio ratione maxime unde saepe reprehenderit cupiditate illo necessitatibus quibusdam at. Sequi aut, tenetur, neque consectetur aperiam soluta eos at iure sint exercitationem aspernatur qui natus blanditiis ullam incidunt magni quibusdam id libero debitis, laborum odit nostrum quas animi harum. Dolorem perspiciatis beatae accusamus totam deserunt, iure minus culpa ullam reprehenderit tempora omnis voluptates et iusto exercitationem a veritatis dolor blanditiis ea maiores sed provident voluptate sunt. Similique, iusto optio? Voluptas hic velit voluptate! Id explicabo modi maiores ullam debitis earum sunt aperiam, doloremque inventore laboriosam at. Amet obcaecati, iste suscipit ipsam eaque magnam. Omnis, nam aperiam modi optio nulla quis nobis error architecto explicabo ea assumenda, ipsa vitae quaerat sapiente neque facere itaque! Dignissimos unde, soluta maxime quod sit doloribus enim itaque est saepe in nihil! Facere voluptates inventore dolorem repellat cupiditate unde deleniti? Doloribus fugit nulla soluta, vel inventore ipsa id placeat, eius ducimus harum voluptatum blanditiis? Aliquid adipisci id, quas magnam blanditiis deserunt sed, reiciendis doloremque mollitia harum, ad perspiciatis dolores nostrum. Molestiae, ducimus? Maxime dolorum hic impedit beatae eos nihil et officiis, repudiandae magnam cupiditate atque at, quisquam odio ex dicta. Architecto sint incidunt quidem voluptas esse sed, officia provident quam modi reprehenderit dolor explicabo labore necessitatibus cupiditate odit autem tenetur rem et dolores sequi corporis eius maxime. Atque nobis aut libero nisi ad? Fuga asperiores voluptatibus excepturi ullam. Ducimus accusantium beatae fugit quam corporis inventore nulla obcaecati numquam deserunt accusamus quibusdam repellendus vitae ratione possimus eos, mollitia nisi reprehenderit in animi distinctio. Doloribus consectetur modi praesentium in ducimus necessitatibus velit accusamus natus dolorem, tenetur iste, laborum suscipit assumenda, accusantium error voluptatum quas recusandae saepe provident? Ad non debitis corrupti aliquid facere vel fugit tempore iusto ea repellendus! Fugit voluptatibus dolorum, ipsam delectus eligendi velit impedit accusantium sunt. Nemo doloribus magni exercitationem laborum fuga asperiores tempore debitis saepe voluptatum odit odio ullam recusandae numquam, illum temporibus repellendus quas ad facilis magnam libero sequi dolorum harum ducimus delectus. Totam quo necessitatibus culpa beatae. Delectus, nisi velit vero numquam eum ad ullam itaque neque vitae modi? Id consequuntur ullam maiores vitae sunt cumque perferendis veniam. Libero sed nesciunt suscipit! Officia similique qui cupiditate autem labore dolor a culpa ullam dolore molestiae ea, vero omnis expedita quae laboriosam! Voluptas fugit voluptatem error neque quasi corporis labore distinctio magnam nulla, hic exercitationem asperiores cupiditate perspiciatis, debitis blanditiis nobis enim in sed, eos a? Alias ratione doloribus, qui consequatur cupiditate, ex autem, ipsa beatae maxime reiciendis voluptate nihil quam excepturi magni labore. Quidem esse sit autem libero. Nisi assumenda voluptas neque molestiae blanditiis tempore architecto quae magnam cupiditate. Delectus expedita numquam, suscipit illum ad ea blanditiis sit voluptatum adipisci quo, dolores reiciendis voluptatibus molestiae ut pariatur sed id rerum, ipsum quas quaerat nemo assumenda quis nihil! Velit optio temporibus provident adipisci, dolorem perspiciatis voluptates? Voluptatem veniam a praesentium veritatis eligendi accusamus optio enim dignissimos odio tenetur tempora aspernatur expedita ut aliquam impedit, natus alias ullam provident quibusdam! Consequuntur nostrum error sit quas tempora, ipsum similique possimus soluta cupiditate quibusdam dignissimos optio eligendi, reprehenderit perferendis ipsam, labore dicta harum suscipit odit illum. In eum asperiores accusantium facilis laudantium animi iusto ut eius provident esse tempora voluptatem deserunt aliquam explicabo, odio non voluptatibus, debitis quasi facere quis eveniet? Voluptas odio incidunt ipsa sed sequi! Doloribus error odio minus sit reprehenderit, quaerat incidunt eos quia nesciunt temporibus! Qui temporibus quasi quibusdam possimus officiis dolorum obcaecati magnam assumenda facilis, debitis ab commodi expedita pariatur nemo nobis ut quia ullam. Omnis, repudiandae. Quia dolorum in consequatur minus labore debitis dicta, est facilis aspernatur possimus consectetur! Et molestias suscipit harum ut dolorum similique earum quaerat nihil facere, sapiente officiis est quas laborum quis eos aut cumque aliquam perspiciatis distinctio beatae soluta! Iste, officia?</p>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
