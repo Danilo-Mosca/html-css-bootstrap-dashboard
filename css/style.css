@@ -35,12 +35,14 @@ e il colore del placeholder */
 
 /* Non usata */
 .my-input.form-control::placeholder {
+    /* Per Firefox e Chrome */
     color: red;
     opacity: 1;
 }
 
 /* Non usata */
 .my-input.form-control::-ms-input-placeholder {
+    /* Per Edge 12 -18 */
    color: blue;
 }
 
@@ -52,4 +54,21 @@ celle (quelle standard sono solo 25%, 50%, 75%, 100% e auto */
 
 .my-w-20 {
     width: 20%;
+}
+
+/* Personalizzo in grassetto le label di tutte le imput box 
+presenti in #newBook */
+#newBook label:not(.check-not-bold){
+    font-weight: bold;
+}
+
+/* Personalizzo il was-validated modificando i bordi e il loro colore */
+#newBook .was-validated .form-control:invalid {
+    border: 0 0 0 2px;
+    border-left: 5px solid red;
+    /* border-radius: 0px; */
+}
+
+.height-textarea-notes {
+    height: 100px;
 }
