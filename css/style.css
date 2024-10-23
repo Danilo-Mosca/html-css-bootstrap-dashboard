@@ -33,11 +33,13 @@ e il colore del placeholder */
     /* color: gray; */
 }
 
+/* Non usata */
 .my-input.form-control::placeholder {
     color: red;
     opacity: 1;
 }
 
+/* Non usata */
 .my-input.form-control::-ms-input-placeholder {
    color: blue;
 }
