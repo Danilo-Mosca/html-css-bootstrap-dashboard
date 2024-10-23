@@ -20,10 +20,16 @@ come accadrebbe normalmente  */
 
 /* Personalizzo i colori del testo, dei bordi
 e il colore di sfondo del pulsante */
-.search-nav-color .btn, .btn:hover {
+.search-nav-color .btn,
+.btn:hover {
     color: white;
     border-color: white;
     background-color: black;
+}
+
+/* Personalizzo il colore del pulsante "Cerca" all'hover */
+.search-nav-color .btn:hover {
+    background-color: #0D6EFD;
 }
 
 /* Personalizzo il colore di sfondo dell'input del testo
@@ -43,7 +49,7 @@ e il colore del placeholder */
 /* Non usata */
 .my-input.form-control::-ms-input-placeholder {
     /* Per Edge 12 -18 */
-   color: blue;
+    color: blue;
 }
 
 /* Mi creo due classi personalizzate per le larghezze delle 
@@ -58,7 +64,7 @@ celle (quelle standard sono solo 25%, 50%, 75%, 100% e auto */
 
 /* Personalizzo in grassetto le label di tutte le imput box 
 presenti in #newBook */
-#newBook label:not(.check-not-bold){
+#newBook label:not(.check-not-bold) {
     font-weight: bold;
 }
 
@@ -69,4 +75,17 @@ Modifico i bordi e il loro colore */
     border: 0 0 0 2px;
     border-left: 5px solid red;
     /* border-radius: 0px; */
+}
+
+/* Personalizzo il colore della 
+checkbox (una volta spuntata)
+"Disponibile anche in digitale" */
+.form-check-input.is-valid:checked,
+.was-validated .form-check-input:valid:checked {
+    background-color: #0D6EFD;
+}
+
+/* Classe che personalizza l'altezza della textarea */
+.my-custom-height {
+    height: 100px;
 }
