@@ -79,8 +79,11 @@ Modifico i bordi e il loro colore */
 
 /* Personalizzo il colore della 
 checkbox (una volta spuntata)
-"Disponibile anche in digitale" */
-.form-check-input.is-valid:checked,
+"Disponibile anche in digitale" 
+La personalizzo solo per il mio main
+con id #newBook non per tutta 
+la libreria di Bootstrap */
+#newBook .form-check-input.is-valid:checked,
 .was-validated .form-check-input:valid:checked {
     background-color: #0D6EFD;
 }
