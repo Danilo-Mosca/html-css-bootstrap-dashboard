@@ -62,13 +62,11 @@ presenti in #newBook */
     font-weight: bold;
 }
 
-/* Personalizzo il was-validated modificando i bordi e il loro colore */
+/* Personalizzo solo il was-validated 
+del mio form non della libreria di Bootstrap.
+Modifico i bordi e il loro colore */
 #newBook .was-validated .form-control:invalid {
     border: 0 0 0 2px;
     border-left: 5px solid red;
     /* border-radius: 0px; */
-}
-
-.height-textarea-notes {
-    height: 100px;
 }
